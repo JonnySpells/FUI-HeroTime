@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- This meta tag tells the browser not to zoom out to make the page fit the screen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hero Time!</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script
+      src="https://kit.fontawesome.com/83dc8efcda.js"></script>
+      <!-- Custom style sheets must be the last style sheet in the head -->
+      <link rel="stylesheet" href="css/custom.css"/>
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container px-5">
+        <!-- Nav Notes:
+        Navigation Classes: "navbar" sets up default styling so that it looks like a typical horizontal navbar
+    - navbar-expand-lg - describes at what screen-size (large) to switch between mobile and horizontal
+    - navbar-dark bg-dark set the text  and background-->
+
+        <a class="navbar-brand" href="index.html">
+          <img src="images/SuperHeroForHire-Logo-Sm.png" />
+        </a>
+        <!-- Nav toggle nots:
+    This is the hamburger icon that appears on smaller screensizes.
+    - data-bs-toggle tells the browser what something does when its clicked
+    - datd-bs-target tell the button what content will collapse or expand
+    - aria-* attributes fpr screen readers-->
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navContent"
+          aria-controls="navContent"
+          aria-expanded="false"
+          aria-label="toggle-navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- This is the navbar collapsable content -->
+        <div class="collapse navbar-collapse" id="navContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <!-- each navbar item (li) needs a class of nav-item -->
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Spacing notes:
+    Spacing prefixes:
+-m,p,g = mARGIN, pADDING, gUTTER
+-- Directional prefixes: t (top), b (bottom), e((END/RIGHT), s(START/LEFT), x (LEFT &RIGHT) y (TOP & BOTTOM)
+NOTE: g (gutter) can only use gx , gy, g 
+
+Spacing suffixes:
+- 0 through 5 -- specify an "em" size (0, 0.25em, 0.5em, 1em, 1.5em, 3em)
+- auto -- only used with margin 
+EXAMPLE:
+px-1 padding horizontal 0.25em
+mb-5 - margin bottom 3em
+Gutter= is the space between stuff
+m=margin p=padding then direction-->
+    <header class="bg-dark py-5">
+      <!-- 
+            -align-items-* vertivcal alignment of child elements
+            -justify-content-* aligns content INSIDE the child elements
+        -->
+      <div class="container px-5">
+        <div class="row gx-5 align-items-center justify-content-center">
+          <div class="col-lg-8 col-xl-7 col-xxl-6">
+            <div class="my-5 text-center text-xl-start">
+              <h1 class="text-white display-5 fw-bolder mb-2">Its Hero Time</h1>
+              <p class="text-white-50 lead fw-normal mb-4">
+                Your friendly neighborhood Supers are only a phone call away!
+              </p>
+
+              <div class="justify-content-sm-center justify-content-xl-start">
+                <a class="btn btn-primary btn-lg px-4 me-3" href="#features"
+                  >Get Started</a
+                >
+                <a class="btn btn-outline-light btn-lg px-4" href="blog.html"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
+            <!--
+                d-none sets the default display ao that our 
+                element is not seen. display: none;
+                d-xl-block sets the display to block at xl
+                screen sizes
+            -->
+            <img
+              class="img-fluid"
+              src="images/SuperheroGroup.png"
+              alt="Group of Superheros in Bright Outfits"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- about us -->
+      <section class="py-5 bg-light">
+        <div class="container px-5 my-5">
+          <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+              <img
+              src="images/TheCaptainHeroes.jpg"
+              alt="Man and woman superheroes flying"
+              class="img-fluid rounded mb-5 mb-lg-0"
+              />
+              </div>
+              <div class="col-lg-6">
+                <h2 class="fw-bolder">Our Founders</h2>
+                <p class="lead fw-normal text-muted mb-0">
+                  In 2020, Mr. & Mrs. Ultraman changed the world  by creating the worlds first public 
+                  help service comprised of a league of trully extordinary people! 
+
+                </p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- growth and beyond-->
+      <section class="py-5"></section>
+      <div class="container-5 bg-light">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6 order-first order-lg-last">
+            <img class="img-fluid rounded mb-5 mb-lg-0"
+            src="images/FantasticLeague.png"
+            alt="Logo with a superhero in a purple suit with a cape"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h2 class="fw-bolder">Growth &amp; Beyond</h2>
+            <p class="lead fw-normal text-muted mb-0">
+              We are honored to have been named 2021's most Fantastic League in our first year of operation!
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- our heroes -->
+      <section class="py-5"></section>
+
+
+      <!-- services -->
+      <section class="py-5"></section>
+      <!-- contact us -->
+      <section class="py-5"></section>
+    </main>
+
+    <div class="container">
+      <footer class="d-flex justify-content-evenly align-items-centered py-3my-4 border-top">
+        <div class="d-flex col-md-4 align-items-center">
+          <a href="index.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none">
+            <img src="images/SuperheroForHire-MiniLogo-100px.png" alt="text bubble with a kapow" />  
+
+        </a>
+        <span class="text-muted">&copy; 2022 Superhero For Hire, Inc</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-evenly list-unstyled f-flex">
+          <li clas="ms-3">
+            <a class="text-muted" href="http://www.twitter.com">
+              <i class="fa-brands fa-instagram"></i> 
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="http://www.instagram.com">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <a class="text-muted" href="http://www.facebook.com">
+            <i class="fa-brands fa-facebook"></i>
+          
+
+      </footer>
+    </div>
+
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
